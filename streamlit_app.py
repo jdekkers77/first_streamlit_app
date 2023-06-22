@@ -47,10 +47,10 @@ except URLError as e:
 
   streamlit.header("The fruit load list contains:")
     #SNOW related function
-    def get_fruit_load_list():
-      with my_cnx.cursor() as my_cur
-           my_cur.execute("select * from fruit_load_list")
-           return my_cur.fetchall()
+  def get_fruit_load_list():
+    with my_cnx.cursor() as my_cur
+         my_cur.execute("select * from fruit_load_list")
+         return my_cur.fetchall()
 
     #   Add Butom  to load
 if streamlit.button('Get Fruit Load List'):
